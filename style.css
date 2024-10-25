@@ -1,0 +1,504 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* start header  */
+.header {
+    position: relative;
+    z-index: -1;
+}
+
+/* end header  */
+
+/* start nav  */
+.navheader {
+    position: absolute;
+    bottom: 85%;
+    margin-left: 30px;
+}
+
+.links {
+    margin-left: 600px;
+    margin-top: 15px;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: #ffffff;
+}
+
+.nav-item:hover {
+    transform: scale(1.09);
+    transition: .7ms;
+    background-color: rgba(0, 0, 0, 0.253);
+}
+
+#username {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 5px 5px 50px;
+    margin-bottom: 10px;
+}
+
+#username:hover {
+    transform: scale(1.09);
+    transition: .7ms;
+    background-color: rgba(0, 0, 0, 0.253);
+    border: 1px solid #ffffff;
+}
+
+#email {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 5px 5px 50px;
+    margin-bottom: 10px;
+}
+
+#email:hover {
+    transform: scale(1.09);
+    transition: .7ms;
+    background-color: rgba(0, 0, 0, 0.253);
+    border: 1px solid #ffffff;
+}
+
+#phone {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 5px 5px 50px;
+    margin-bottom: 10px;
+}
+
+#phone:hover {
+    transform: scale(1.09);
+    transition: .7ms;
+    background-color: rgba(0, 0, 0, 0.253);
+    border: 1px solid #ffffff;
+}
+
+#password {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 5px 5px 50px;
+    margin-bottom: 10px;
+}
+
+#password:hover {
+    transform: scale(1.09);
+    transition: .7ms;
+    background-color: rgba(0, 0, 0, 0.253);
+    border: 1px solid #ffffff;
+}
+
+.submit {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 8px 5px 8px;
+    background-color: white;
+}
+
+.submit:hover {
+    transform: scale(1.09);
+    transition: .7ms;
+    background-color: rgba(0, 0, 0, 0.253);
+    border: #ffffff;
+
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1060;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: 0;
+}
+
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: rgb(119, 44, 55);
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: .3rem;
+    outline: 0;
+}
+
+.form {
+    text-align: center;
+}
+
+.user {
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.user:hover {
+    transform: scale(1.09);
+    transition: .7ms;
+    background-color: rgba(0, 0, 0, 0.253);
+}
+
+.modal-title {
+    margin-bottom: 0;
+    line-height: 1.5;
+    color: #ffffff;
+}
+
+#error {
+    color: #ffffff;
+}
+
+
+span {
+    position: absolute;
+    width: 55px;
+    height: 24px;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin-left: 520px;
+}
+
+span::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    left: 1px;
+    top: 1px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #000;
+    transition: 0.4s;
+}
+
+span.active::before {
+    left: 24px;
+    background-color: #fff;
+}
+
+body.night {
+    background-color: #000;
+    color: #fff;
+}
+
+/* end nav  */
+
+/* start section  */
+.address {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    text-align: center;
+}
+
+.Welcome {
+    color: #ffffff;
+    font-family: 'Brush Script MT', Phyllis, 'Lucida Handwriting', cursive;
+    font-size: 50px;
+}
+
+.TIME {
+    color: #FFFFFFFF;
+    font-family: "Times New Roman", Times, serif;
+    margin-bottom: 30px;
+}
+
+#READ {
+    color: black;
+    background-color: #ffffff;
+    border: 1px solid #FFFFFFFF;
+    padding: 10px 20px;
+}
+
+#READ:hover {
+    color: #ffffff;
+    background-color: rgba(119, 116, 116, 0.281);
+    border: 1px solid rgba(119, 116, 116, 0.281);
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: .25rem;
+}
+
+.btn-outline-secondary {
+    border-color: #ffffff;
+}
+
+/* end section  */
+
+/* start section2  */
+.dolor {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.flower {
+    text-align: center;
+}
+
+.Address {
+    font-family: "Times New Roman", Times, serif;
+    font-size: large;
+    color: #000;
+    margin: 10px 0px;
+}
+
+.Lorem {
+    color: #afafaf;
+
+}
+
+/* end section  */
+
+/* start section3  */
+.wondebul {
+    background-color: rgba(255, 192, 201, 0.87);
+    margin-top: 60px;
+    height: 700px;
+}
+
+.text {
+    text-align: center;
+}
+
+.grobs {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.img09 {
+    position: relative;
+    text-align: center;
+}
+
+.img08:hover {
+    transform: scale(1.03);
+    transition: .7ms;
+}
+
+.sold {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 1;
+    background-color: #000000;
+    color: #ffffff;
+    width: 50px;
+    height: 40px;
+    padding-top: 8px;
+    text-align: center;
+}
+
+.grob {
+    text-align: center;
+}
+
+.ORANGE {
+    font-family: "Times New Roman", Times, serif;
+    margin-top: 10px;
+    font-size: larger;
+}
+
+/* end section  */
+
+/* start section3  */
+.attachnt {
+    background-image: url(img12.jpg);
+    height: 250px;
+    background-attachment: fixed;
+}
+
+.WEB {
+    display: flex;
+    justify-content: space-around;
+}
+
+.blog {
+    text-align: center;
+    padding-top: 90px;
+}
+
+.HAPPY {
+    font-family: "Times New Roman", Times, serif;
+    font-size: larger;
+    color: #ffffff;
+
+}
+
+/* end section  */
+
+/* start section5  */
+.SPOT {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.img13 {
+    position: relative;
+}
+
+.perfect {
+    position: absolute;
+    top: 2%;
+}
+
+.auctor {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 50px;
+    color: #000;
+}
+
+.Proin {
+    margin-top: 10px;
+    color: #afafaf;
+
+}
+
+.button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border: 1px solid black;
+}
+
+.READ {
+    color: black;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: rgba(119, 116, 116, 0.281);
+    border: 1px solid rgba(119, 116, 116, 0.281);
+}
+
+/* end section  */
+
+/* start section6  */
+.section6 {
+    position: relative;
+}
+
+.Testimeouials {
+    position: absolute;
+    top: 20%;
+    left: 24%;
+}
+
+.EXPERIENCE {
+    text-align: center;
+}
+
+/* end section  */
+
+/* start section7  */
+.AMBER {
+    font-family: "Times New Roman", Times, serif;
+    color: #707070;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.Grob {
+    text-align: center;
+}
+
+.MASON {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Florist {
+    background-image: url(img16.jpg);
+    height: 850px;
+}
+
+/* end section  */
+
+/* start section8  */
+.img21 {
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* end section  */
+
+/* start section9  */
+
+.email {
+    background-color: rgba(255, 192, 201, 0.87);
+    height: 220px;
+    text-align: center;
+}
+
+.Your {
+    padding-left: 10px;
+    padding-right: 400px;
+    border: 7px solid white;
+}
+
+.SEND {
+    padding: 7px 20px;
+    color: #ffffff;
+    background-color: #000;
+    border: #000;
+}
+
+/* end section  */
+
+/* start footer  */
+.footer {
+    margin-top: 50px;
+}
+
+.rosebud {
+    background-color: #161616;
+    height: 450px;
+}
+
+.WORKING {
+    font-family: "Times New Roman", Times, serif;
+}
+
+.icons8 {
+    background-color: black;
+    height: 30px;
+}
+
+.Qode {
+    font-weight: 100;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* end footer  */

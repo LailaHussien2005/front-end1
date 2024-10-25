@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <!-- start header  -->
+  <header class="header">
+    <div>
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img12.jpg" class="d-block w-100" alt="..." height="600px">
+          </div>
+          <div class="carousel-item">
+            <img src="img15.jpg" class="d-block w-100" alt="..." height="600px">
+          </div>
+          <div class="carousel-item">
+            <img src="img30.jpg" class="d-block w-100" alt="..." height="600px">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <!-- end header  -->
+
+  <!-- start nav  -->
+  <nav class="nav">
+    <div class="navheader">
+
+      <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container">
+          <img src="img04.png" alt="...." width="100px">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="links">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">PAGES</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">PORTFOLIO</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">BLOG</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">SHOP</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">ELEMENTS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#"> <img src="icons8-shopping-cart-100.png" alt="..." width="25px">
+                  </a>
+                </li>
+              </ul>
+
+              <!-- Button trigger modal -->
+              <button type="button" class="user" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                <img src="icons8-user-100.png" alt="...." width="30px">
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title" id="staticBackdropLabel">Login</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+
+
+                      <form onsubmit="return validateForm()" class="form">
+                        <img src="icons8-user-100.png" alt="...." width="80px">
+                        <div id="error"></div>
+                        <br>
+                        <label for="email"
+                          style="color:#FFFFFFFF; font-size: large; margin-right: 145px; margin-bottom: 5px;">Username
+                          :</label>
+                        <br>
+                        <input type="text" name="username" id="username">
+                        <br>
+                        <label for="email"
+                          style="color:#FFFFFFFF; font-size: large; margin-right: 180px; margin-bottom: 5px;">Email
+                          :</label>
+                        <br>
+                        <input type="email" name="email" id="email">
+                        <br>
+                        <label for="email"
+                          style="color:#FFFFFFFF; font-size: large; margin-right: 170px; margin-bottom: 5px;">Phone
+                          :</label>
+                        <br>
+                        <input type="tel" name="phone" id="phone">
+                        <br>
+                        <label for="email"
+                          style="color:#FFFFFFFF; font-size: large; margin-right: 145px; margin-bottom: 5px;">Password
+                          :</label>
+                        <br>
+                        <input type="password" name="password" id="password">
+
+
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="submit"><input type="submit" class=" submit"> </button>
+                      <button type="button" class="submit"><input type="reset" class=" submit"> </button>
+                      </form>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <span id="darkmode"></span>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </nav>
+  <!-- end nav  -->
+
+  <!-- start section  -->
+  <section class="container">
+    <div class="row">
+      <div class="col">
+        <div class="address">
+          <div>
+            <h3 class="Welcome">Welcome Rosebud </h3>
+          </div>
+
+          <div class="TIME">
+            <h1 style="font-size:60px ;">TIME TO BLOSSOM </h1>
+          </div>
+
+          <div style="margin-bottom: 40PX;">
+            <p style="color: #FFFFFFFF; font-size: 18PX;">A Simply gorgeous wordPress theme packed with everything you
+              will need to creat a delightful</p>
+            <p style="color: #FFFFFFFF; font-size: 18PX;">website for your flower shop or florist business quickly and
+              with ease.</p>
+          </div>
+
+          <div>
+            <button type="button" class="btn btn-outline-secondary" id="READ">READ MORE</button>
+            <button type="button" class="btn btn-outline-secondary">READ MORE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end section  -->
+
+  <!-- start section2  -->
+  <section class="section2">
+    <div class="container">
+      <div class="dolor">
+        <div class="flower">
+          <img src="img05.png" alt="...." width="50px">
+          <h3 class="Address">READY TO BE IMPRESSED</h3>
+          <h6 class="Lorem">Lorem ipsum dolor sit amet consectetur</h6>
+          <h6 class="Lorem">adipisicing elit aut</h6>
+        </div>
+
+        <div class="flower">
+          <img src="img06.png" alt="...." width="50px">
+          <h3 class="Address">POWERUL SOLUTONS</h3>
+          <h6 class="Lorem">Lorem ipsum dolor sit amet consectetur</h6>
+          <h6 class="Lorem">adipisicing elit aut</h6>
+        </div>
+
+        <div class="flower">
+          <img src="img07.png" alt="...." width="50px">
+          <h3 class="Address">LEADERS OF TOMORROW</h3>
+          <h6 class="Lorem">Lorem ipsum dolor sit amet consectetur</h6>
+          <h6 class="Lorem">adipisicing elit aut</h6>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end section  -->
+
+  <!-- start section3  -->
+  <section class="section3">
+    <div class="container">
+      <div class="wondebul">
+        <div class="text">
+          <h3 class="Welcome" style="color: black; font-size: 60px; padding-top: 80px;">Wondebul gibt</h3>
+          <h1 class="TIME" style="color: black;">OUR WONDERFUI ARRANGEMENTS</h1>
+        </div>
+
+        <div class="container">
+          <div class="grobs">
+            <div class="grob">
+              <img src="img08.jpg" alt="" width="250px" class="img08">
+              <h4 class="ORANGE">ORANGE SILK</h4>
+              <p style="color: #7e7474;">$330</p>
+            </div>
+
+            <div class="img09">
+              <img src="img09.jpg" alt="" width="250px" class="img08">
+              <p class="sold">sold</p>
+              <h4 class="ORANGE">DARK FOREST</h4>
+              <p style="color: #7e7474;">$250</p>
+            </div>
+
+            <div class="img09">
+              <img src="img10.jpg" alt="" width="250px" class="img08">
+              <p class="sold">sale</p>
+              <h4 class="ORANGE">PEARL ROSES</h4>
+              <div style="display: flex; color: #7e7474; ">
+                <del style="margin-left: 80px;">$125</del>
+                <p style="margin-left: 20px;">$100</p>
+              </div>
+            </div>
+
+            <div class="grob">
+              <img src="img11.jpg" alt="" width="250px" class="img08">
+              <h4 class="ORANGE">RUSTIC DECOR</h4>
+              <p style="color: #7e7474;">$350</p>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end section  -->
+
+  <!-- start section4  -->
+  <section class="section4">
+    <div class="container">
+      <div class="attachnt">
+        <div class="WEB">
+          <div class="blog">
+            <h1 style="color: #ffffff; font-size: 30px;">86</h1>
+            <h4 class="HAPPY">BLOG POSTS</h4>
+          </div>
+          <div class="blog">
+            <h1 style="color: #ffffff; font-size: 30px;">25</h1>
+            <h4 class="HAPPY">HAPPY CLIENTS</h4>
+          </div>
+          <div class="blog">
+            <h1 style="color: #ffffff; font-size: 30px;">17</h1>
+            <h4 class="HAPPY">WEB AWARDS</h4>
+          </div>
+          <div class="blog">
+            <h1 style="color: #ffffff; font-size: 30px;">98</h1>
+            <h4 class="HAPPY">FLOWER SORTS</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end section  -->
+
+  <!-- start section5  -->
+  <section class="section5">
+    <div class="container">
+      <div class="SPOT">
+        <div class="img13">
+          <img src="img13.png" alt="..." width="270px" style="margin-left: 300px; margin-top: 30px;">
+          <div class="perfect">
+            <h3 class="Welcome" style="color: black; font-size: 60px; padding-top: 70px;">wondebul gibt</h3>
+            <h1 class="auctor">A PERFECT SPOT</h1>
+            <div class="Proin">
+              <h6 style="font-size: 14px;">Proin gravida nibh vel velit auctor aliquet . Aenean sollicitudin , lorem
+                quis bibe ndum</h6>
+              <h6 style="font-size: 14px;">auctor , nisi elit consequat ipsu . Proin gravida nibh vel velit auctor all
+                quet Aenean</h6>
+              <h6 style="font-size: 14px;">sol lici tudin , lorem quis bibendum .</h6>
+            </div>
+            <button class="button">
+              <h6 class="READ">READ MORE</h6>
+            </button>
+          </div>
+        </div>
+        <div class="img14">
+          <img src="img14.jpg" alt="...." width="520px" style="margin-top: 70px;">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end section  -->
+
+  <!-- start section6  -->
+  <section class="section6">
+    <div style="margin-top: 60px;">
+      <div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img15.jpg" class="d-block w-100" alt="..." height="500px">
+            </div>
+            <div class="carousel-item">
+              <img src="img14.jpg" class="d-block w-100" alt="..." height="500px">
+            </div>
+            <div class="carousel-item">
+              <img src="img09.jpg" class="d-block w-100" alt="..." height="500px">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="Testimeouials">
+      <div class="EXPERIENCE">
+        <h3 class="Welcome" style="color: rgb(255, 255, 255); font-size: 60px; ">Testimeouials</h3>
+        <h1 class="TIME" style="color: rgb(255, 255, 255);">AN EXPERIENCE DELIVERED</h1>
+        <div class="aliquet">
+          <h6 style="font-size: 20px; color: #ffffff;">Proin gravida nibh vel velit auctor aliquet . Aenean sollicitudin
+            , lorem quis</h6>
+          <h6 style="font-size: 20px; color: #ffffff;">bibe ndum auctor , nisi elit consequat ipsu . Proin gravida nibh
+            vel velit auctor</h6>
+          <h6 style="font-size: 20px; color: #ffffff;">allquet. Aen ean solis</h6>
+        </div>
+        <h6 style="color: #ffffff;font-size: 20px; margin-top: 30px;">HELEN MALONE</h6>
+      </div>
+    </div>
+  </section>
+  <!-- end section  -->
+
+  <!-- start section7 -->
+  <section class="section7">
+    <div class="container">
+
+      <div class="Florist">
+        <div style="text-align: center;">
+          <h3 class="Welcome" style="color: black; font-size: 60px; padding-top: 80px;">Wondebul gibt</h3>
+          <h1 class="TIME" style="color: black;">OUR TEAM OF EXPERTS</h1>
+        </div>
+        <div class="MASON">
+          <div class="Grob">
+            <img src="img17.jpg" alt="" width="250px">
+            <h6 class="AMBER">MASON ROBINSON</h6>
+            <p style="color: #707070;">Florist</p>
+            <div style="display: flex; justify-content: space-evenly; margin-left: 10px;">
+              <img src="icons8-f-50.png" alt="......" width="20px">
+              <img src="icons8-twitter-50.png" alt="...." width="20px">
+              <img src="icons8-instagram-50.png" alt="...." width="20px">
+            </div>
+          </div>
+
+          <div class="Grob">
+            <img src="img18.jpg" alt="" width="250px">
+            <h6 class="AMBER">AMBER GREEN</h6>
+            <p style="color: #707070;">Designer</p>
+            <div style="display: flex; justify-content: space-evenly; margin-left: 10px;">
+              <img src="icons8-f-50.png" alt="......" width="20px">
+              <img src="icons8-twitter-50.png" alt="...." width="20px">
+              <img src="icons8-instagram-50.png" alt="...." width="20px">
+            </div>
+          </div>
+
+          <div class="Grob">
+            <img src="img19.jpg" alt="" width="250px">
+            <h6 class="AMBER">AMELY HUNTER</h6>
+            <p style="color: #707070;">Florist</p>
+            <div style="display: flex; justify-content: space-evenly; margin-left: 10px;">
+              <img src="icons8-f-50.png" alt="......" width="20px">
+              <img src="icons8-twitter-50.png" alt="...." width="20px">
+              <img src="icons8-instagram-50.png" alt="...." width="20px">
+            </div>
+          </div>
+
+          <div class="Grob">
+            <img src="img20.jpg" alt="" width="250px">
+            <h6 class="AMBER">AMBER GREEN</h6>
+            <p style="color: #707070;">Founder</p>
+            <div style="display: flex; justify-content: space-evenly; margin-left: 10px;">
+              <img src="icons8-f-50.png" alt="......" width="20px">
+              <img src="icons8-twitter-50.png" alt="...." width="20px">
+              <img src="icons8-instagram-50.png" alt="...." width="20px">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end section  -->
+
+  <!-- start section8 -->
+  <section class="section8">
+    <div class="container">
+      <div class="img21">
+        <img src="img21.jpg" alt="....." width="279px">
+        <img src="img22.jpg" alt="....." width="279px">
+        <img src="img23.jpg" alt="....." width="279px">
+        <img src="img24.jpg" alt="....." width="279px">
+      </div>
+    </div>
+  </section>
+  <!-- end section  -->
+
+  <!-- start section9 -->
+  <section class="section9">
+    <div class="container">
+      <div class="email">
+        <h1 class="TIME" style="color: rgb(0, 0, 0); font-size: 28PX; padding-top: 50PX;">SUBSCRIBE TO OURWEEKLY
+          NEWSLETTER</h1>
+        <div style="display: flex; flex-wrap: wrap;   margin-left: 180px;">
+          <input type="email" placeholder="Your E-mail address" class="Your">
+          <button class="SEND">SEND MESSAGE</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end section  -->
+
+  <!-- start footer  -->
+  <footer class="footer">
+    <div>
+      <div class="rosebud">
+        <div style="display: flex;justify-content: space-around;">
+          <div style="margin-top: 90px;">
+            <img src="img04.png" alt="..." width="100px">
+            <h6 style="color: #ffffff;margin-top: 50px;">Proin gravida nibh vel velit auctor aliquet.</h6>
+            <h6 style="color: #ffffff;">Aenean sollicitu din, lorem quistix</h6>
+            <h6 style="color: #ffffff;margin-bottom: 50px;">bibendum auctoris</h6>
+            <div style="display: flex; ;">
+              <img src="icons8-facebook-50.png" alt="......" width="20px">
+              <img src="icons8-twitter-50 (1).png" alt="...." width="20px">
+              <img src="icons8-instagram-50 (1).png" alt="...." width="20px">
+            </div>
+          </div>
+
+          <div style="color: #ffffff;font-weight:100 ;margin-top: 90px;">
+            <h3 class="WORKING">WORKING HOURS</h3>
+            <h6 style="margin-top:50px ;">Monday : 10AM-9AM</h6>
+            <h6>Tuesday : 10AM-9AM</h6>
+            <h6>Wednesday : 10AM-9AM</h6>
+            <h6>Thursday : 10AM-9AM</h6>
+            <h6>Friday : 10AM-9AM</h6>
+            <h6>Saturday : 10AM-9AM</h6>
+            <h6>Sunday : Closed</h6>
+          </div>
+
+          <div style="color: #ffffff;font-weight:100 ;margin-top: 90px;">
+            <h3 class="WORKING">WHERE TO FIND US</h3>
+            <h6 style="margin-top: 50px;">Adress:Juniper Vally 17, New York</h6>
+            <h6>Adress 2:831 Elm St, New York</h6>
+            <h6>Phone1:+246/ 167-1468</h6>
+            <h6>Phone1:+246/569-42696</h6>
+            <h6>E-mail: rosebud@qodeinteractive.om</h6>
+          </div>
+
+          <div style="color: #ffffff;font-weight:100 ;margin-top: 90px;">
+            <h3 class="WORKING">FOLLOW OUR INSTAGRAM </h3>
+
+            <div style="display: flex;justify-content: space-around;margin-top: 50px;">
+              <img src="img26.jpg" alt="...." width="110px">
+              <img src="img27.jpg" alt="...." width="110px">
+              <img src="img28.jpg" alt="...." width="110px">
+            </div>
+
+            <div style="display: flex;justify-content: space-around;margin-top: 10px;">
+              <img src="img29.jpg" alt="...." width="110px">
+              <img src="img30.jpg" alt="...." width="110px">
+              <img src="img31.jpg" alt="...." width="110px">
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="icons8">
+        <div style="display: flex;justify-content: center; padding-top: 5px;">
+          <img src="icons8-c-24.png" alt="...." height="20px">
+          <h6 class="Qode">2018 Qode Interactive, All Rights Reserved</h6>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- end footer  -->
+
+  <script src="bootstrap.min.js"></script>
+  <script src="popper.min.js"></script>
+  <script src="laila.js"></script>
+</body>
+
+</html>
